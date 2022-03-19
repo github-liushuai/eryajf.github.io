@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>二丫讲梵</title>
+        <link>https://wiki.eryajf.net</link>
+        <description>💻学习📝记录🔗分享
+学无止境是永远前进的基础，跃然纸上是对知识的总结交代，与众分享则是实现价值的最好方式。</description>
+        <lastBuildDate>Sat, 19 Mar 2022 10:02:46 GMT</lastBuildDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
+        <atom:link href="https://wiki.eryajf.net/feed.atom" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[一句话经验]]></title>
+            <link>https://wiki.eryajf.net/pages/d7bc9f/</link>
+            <guid>https://wiki.eryajf.net/pages/d7bc9f/</guid>
+            <pubDate>Wed, 03 Nov 2021 19:35:52 GMT</pubDate>
+            <description><![CDATA[有一些经验，非真切经历而不能真切体会，而当真切体会之后，就应当真切凝练汇总，这里汇总整理记录一些工作中的心得经验。]]></description>
+            <enclosure url="http://t.eryajf.net/imgs/2021/11/9e5a098c0095e5d2.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[golang使用$in或$nin查询MongoDB是否在数组内的数据]]></title>
+            <link>https://wiki.eryajf.net/pages/3d5e3d/</link>
+            <guid>https://wiki.eryajf.net/pages/3d5e3d/</guid>
+            <pubDate>Sat, 26 Feb 2022 14:57:21 GMT</pubDate>
+            <description><![CDATA[开发cmdb系统的时候，有一个场景是A对象数据关联B对象的数据，此时有一个接口需要透出已经在(或者不在)A对象某条数据关联列表的B对象的数据。]]></description>
+            <enclosure url="http://t.eryajf.net/imgs/2022/02/e6bef9e7cefe9857.jpeg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[golang使用$push和$addToSet往数组添加字段的异同]]></title>
+            <link>https://wiki.eryajf.net/pages/f85bb3/</link>
+            <guid>https://wiki.eryajf.net/pages/f85bb3/</guid>
+            <pubDate>Fri, 11 Mar 2022 17:27:14 GMT</pubDate>
+            <description><![CDATA[在面对MongoDB的集合字段交互时，我们可能会接触到$push与$addToSet两个方法，两个方法看似功能差不多，实际使用场景中也有一些不同，这里先说结论。]]></description>
+            <enclosure url="http://t.eryajf.net/imgs/2022/03/5c9f3183898546f5.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[MongoDB自增ID在golang中的实践]]></title>
+            <link>https://wiki.eryajf.net/pages/383679/</link>
+            <guid>https://wiki.eryajf.net/pages/383679/</guid>
+            <pubDate>Fri, 18 Mar 2022 15:41:30 GMT</pubDate>
+            <description><![CDATA[MongoDB默认的ID不像MySQL那样的自增ID，如果想要实现自增ID，则需要借助于另一张表存放该表的ID，每次存数据的时候，需要通过findAndModify方法对这个ID进行获取并加1。]]></description>
+            <enclosure url="http://t.eryajf.net/imgs/2022/03/188761962cdfaea3.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[学习周刊-2022年第09周]]></title>
+            <link>https://wiki.eryajf.net/pages/c3ee7b/</link>
+            <guid>https://wiki.eryajf.net/pages/c3ee7b/</guid>
+            <pubDate>Sat, 12 Mar 2022 08:26:46 GMT</pubDate>
+            <description><![CDATA[学习周刊-2022年第09周]]></description>
+            <enclosure url="http://t.eryajf.net/imgs/2022/03/6a51b421f5d8593d.webp">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[学习周刊-2022年第10周]]></title>
+            <link>https://wiki.eryajf.net/pages/02cfc7/</link>
+            <guid>https://wiki.eryajf.net/pages/02cfc7/</guid>
+            <pubDate>Sat, 19 Mar 2022 17:53:04 GMT</pubDate>
+            <description><![CDATA[学习周刊-2022年第10周]]></description>
+            <enclosure url="http://t.eryajf.net/imgs/2022/02/a71b5592652a0d07.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[偶感]]></title>
+            <link>https://wiki.eryajf.net/pages/d7d760/</link>
+            <guid>https://wiki.eryajf.net/pages/d7d760/</guid>
+            <pubDate>Mon, 14 Jun 2021 21:03:35 GMT</pubDate>
+            <description><![CDATA[她在你心里翻江倒海得存在]]></description>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,64 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "二丫讲梵",
+    "home_page_url": "https://wiki.eryajf.net",
+    "feed_url": "https://wiki.eryajf.net/feed.json",
+    "description": "💻学习📝记录🔗分享\n学无止境是永远前进的基础，跃然纸上是对知识的总结交代，与众分享则是实现价值的最好方式。",
+    "items": [
+        {
+            "id": "https://wiki.eryajf.net/pages/d7bc9f/",
+            "url": "https://wiki.eryajf.net/pages/d7bc9f/",
+            "title": "一句话经验",
+            "summary": "有一些经验，非真切经历而不能真切体会，而当真切体会之后，就应当真切凝练汇总，这里汇总整理记录一些工作中的心得经验。",
+            "image": "http://t.eryajf.net/imgs/2021/11/9e5a098c0095e5d2.jpg",
+            "date_modified": "2021-11-03T19:35:52.000Z"
+        },
+        {
+            "id": "https://wiki.eryajf.net/pages/3d5e3d/",
+            "url": "https://wiki.eryajf.net/pages/3d5e3d/",
+            "title": "golang使用$in或$nin查询MongoDB是否在数组内的数据",
+            "summary": "开发cmdb系统的时候，有一个场景是A对象数据关联B对象的数据，此时有一个接口需要透出已经在(或者不在)A对象某条数据关联列表的B对象的数据。",
+            "image": "http://t.eryajf.net/imgs/2022/02/e6bef9e7cefe9857.jpeg",
+            "date_modified": "2022-02-26T14:57:21.000Z"
+        },
+        {
+            "id": "https://wiki.eryajf.net/pages/f85bb3/",
+            "url": "https://wiki.eryajf.net/pages/f85bb3/",
+            "title": "golang使用$push和$addToSet往数组添加字段的异同",
+            "summary": "在面对MongoDB的集合字段交互时，我们可能会接触到$push与$addToSet两个方法，两个方法看似功能差不多，实际使用场景中也有一些不同，这里先说结论。",
+            "image": "http://t.eryajf.net/imgs/2022/03/5c9f3183898546f5.jpg",
+            "date_modified": "2022-03-11T17:27:14.000Z"
+        },
+        {
+            "id": "https://wiki.eryajf.net/pages/383679/",
+            "url": "https://wiki.eryajf.net/pages/383679/",
+            "title": "MongoDB自增ID在golang中的实践",
+            "summary": "MongoDB默认的ID不像MySQL那样的自增ID，如果想要实现自增ID，则需要借助于另一张表存放该表的ID，每次存数据的时候，需要通过findAndModify方法对这个ID进行获取并加1。",
+            "image": "http://t.eryajf.net/imgs/2022/03/188761962cdfaea3.jpg",
+            "date_modified": "2022-03-18T15:41:30.000Z"
+        },
+        {
+            "id": "https://wiki.eryajf.net/pages/c3ee7b/",
+            "url": "https://wiki.eryajf.net/pages/c3ee7b/",
+            "title": "学习周刊-2022年第09周",
+            "summary": "学习周刊-2022年第09周",
+            "image": "http://t.eryajf.net/imgs/2022/03/6a51b421f5d8593d.webp",
+            "date_modified": "2022-03-12T08:26:46.000Z"
+        },
+        {
+            "id": "https://wiki.eryajf.net/pages/02cfc7/",
+            "url": "https://wiki.eryajf.net/pages/02cfc7/",
+            "title": "学习周刊-2022年第10周",
+            "summary": "学习周刊-2022年第10周",
+            "image": "http://t.eryajf.net/imgs/2022/02/a71b5592652a0d07.png",
+            "date_modified": "2022-03-19T17:53:04.000Z"
+        },
+        {
+            "id": "https://wiki.eryajf.net/pages/d7d760/",
+            "url": "https://wiki.eryajf.net/pages/d7d760/",
+            "title": "偶感",
+            "summary": "她在你心里翻江倒海得存在",
+            "date_modified": "2021-06-14T21:03:35.000Z"
+        }
+    ]
+}

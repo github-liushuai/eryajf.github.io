@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>运维观止 | 二丫讲梵</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_3077305_pt8umhrn4k9.css">
+    <script language="javascript" type="text/javascript" src="/js/pgmanor-self.js"></script>
+    <link rel="alternate" type="application/rss+xml" href="https://wiki.eryajf.net/rss.xml" title="二丫讲梵 RSS Feed">
+    <link rel="alternate" type="application/atom+xml" href="https://wiki.eryajf.net/feed.atom" title="二丫讲梵 Atom Feed">
+    <link rel="alternate" type="application/json" href="https://wiki.eryajf.net/feed.json" title="二丫讲梵 JSON Feed">
+    <meta name="description" content=":::">
+    <meta name="twitter:title" content="运维观止">
+    <meta name="twitter:description" content=":::">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://wiki.eryajf.net/00.%E7%9B%AE%E5%BD%95%E9%A1%B5/01.%E8%BF%90%E7%BB%B4.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="运维观止">
+    <meta property="og:description" content=":::">
+    <meta property="og:url" content="https://wiki.eryajf.net/00.%E7%9B%AE%E5%BD%95%E9%A1%B5/01.%E8%BF%90%E7%BB%B4.html">
+    <meta property="og:site_name" content="Eryajf">
+    <meta property="article:published_time" content="2020-03-11T21:50:53.000Z">
+    <meta itemprop="name" content="运维观止">
+    <meta itemprop="description" content=":::">
+    <meta name="keywords" content="二丫讲梵,Linux,运维,yum,运维艺术,eryajf,jenkins,nexus,golang,vue">
+    <meta name="baidu-site-verification" content="code-LTKHwOecxI">
+    <meta name="theme-color" content="#11a8cd">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <link rel="preload" href="/assets/css/0.styles.490aa64e.css" as="style"><link rel="preload" href="/assets/js/app.b64d52e0.js" as="script"><link rel="preload" href="/assets/js/2.09106d93.js" as="script"><link rel="preload" href="/assets/js/6.0fa149be.js" as="script"><link rel="prefetch" href="/assets/js/10.15ef867a.js"><link rel="prefetch" href="/assets/js/100.a09066f0.js"><link rel="prefetch" href="/assets/js/101.87dfe94d.js"><link rel="prefetch" href="/assets/js/102.17b33707.js"><link rel="prefetch" href="/assets/js/103.b220cf43.js"><link rel="prefetch" href="/assets/js/104.9ab83364.js"><link rel="prefetch" href="/assets/js/105.ae924099.js"><link rel="prefetch" href="/assets/js/106.db60b3ac.js"><link rel="prefetch" href="/assets/js/107.22956c0b.js"><link rel="prefetch" href="/assets/js/108.5be2b5a5.js"><link rel="prefetch" href="/assets/js/109.8bc00d64.js"><link rel="prefetch" href="/assets/js/11.17cf8242.js"><link rel="prefetch" href="/assets/js/110.73039801.js"><link rel="prefetch" href="/assets/js/111.e52d4e2f.js"><link rel="prefetch" href="/assets/js/112.637178d0.js"><link rel="prefetch" href="/assets/js/113.b482195b.js"><link rel="prefetch" href="/assets/js/114.370467f0.js"><link rel="prefetch" href="/assets/js/115.49a702b3.js"><link rel="prefetch" href="/assets/js/116.9a853240.js"><link rel="prefetch" href="/assets/js/117.3224c42c.js"><link rel="prefetch" href="/assets/js/118.fc5f92ea.js"><link rel="prefetch" href="/assets/js/119.03edd7ea.js"><link rel="prefetch" href="/assets/js/12.5dbf4e34.js"><link rel="prefetch" href="/assets/js/120.581dea25.js"><link rel="prefetch" href="/assets/js/121.21769b93.js"><link rel="prefetch" href="/assets/js/122.913d901b.js"><link rel="prefetch" href="/assets/js/123.619968e5.js"><link rel="prefetch" href="/assets/js/124.28a0edd1.js"><link rel="prefetch" href="/assets/js/125.24147bdd.js"><link rel="prefetch" href="/assets/js/126.84b93f04.js"><link rel="prefetch" href="/assets/js/127.fc3dc871.js"><link rel="prefetch" href="/assets/js/128.cc9c516c.js"><link rel="prefetch" href="/assets/js/129.c9f9a866.js"><link rel="prefetch" href="/assets/js/13.25c4bf63.js"><link rel="prefetch" href="/assets/js/130.f72d5e3c.js"><link rel="prefetch" href="/assets/js/131.aa86a427.js"><link rel="prefetch" href="/assets/js/132.d34ef8c9.js"><link rel="prefetch" href="/assets/js/133.61fe2407.js"><link rel="prefetch" href="/assets/js/134.75f26d4a.js"><link rel="prefetch" href="/assets/js/135.f768b626.js"><link rel="prefetch" href="/assets/js/136.c7e855b7.js"><link rel="prefetch" href="/assets/js/137.efdd6444.js"><link rel="prefetch" href="/assets/js/138.bcba273d.js"><link rel="prefetch" href="/assets/js/139.96def2ce.js"><link rel="prefetch" href="/assets/js/14.825005f1.js"><link rel="prefetch" href="/assets/js/140.c714dea2.js"><link rel="prefetch" href="/assets/js/141.b0c5a1b5.js"><link rel="prefetch" href="/assets/js/142.88f3420d.js"><link rel="prefetch" href="/assets/js/143.0002b84f.js"><link rel="prefetch" href="/assets/js/144.fb709135.js"><link rel="prefetch" href="/assets/js/145.84987a48.js"><link rel="prefetch" href="/assets/js/146.f62ef02a.js"><link rel="prefetch" href="/assets/js/147.32614a80.js"><link rel="prefetch" href="/assets/js/148.842cf367.js"><link rel="prefetch" href="/assets/js/149.26bb38c6.js"><link rel="prefetch" href="/assets/js/15.651b5e76.js"><link rel="prefetch" href="/assets/js/150.63b1b784.js"><link rel="prefetch" href="/assets/js/151.0212b10f.js"><link rel="prefetch" href="/assets/js/152.c2041fff.js"><link rel="prefetch" href="/assets/js/153.236d6c9d.js"><link rel="prefetch" href="/assets/js/154.d1ef24bc.js"><link rel="prefetch" href="/assets/js/155.1bfc465b.js"><link rel="prefetch" href="/assets/js/156.0b51b05b.js"><link rel="prefetch" href="/assets/js/157.a72900c5.js"><link rel="prefetch" href="/assets/js/158.7cdccb10.js"><link rel="prefetch" href="/assets/js/159.05014aa0.js"><link rel="prefetch" href="/assets/js/16.e4b8feb4.js"><link rel="prefetch" href="/assets/js/160.aa8bf21a.js"><link rel="prefetch" href="/assets/js/161.e661ef5f.js"><link rel="prefetch" href="/assets/js/162.f3e077d1.js"><link rel="prefetch" href="/assets/js/163.ac4d8489.js"><link rel="prefetch" href="/assets/js/164.5c9a804d.js"><link rel="prefetch" href="/assets/js/165.dd3607b5.js"><link rel="prefetch" href="/assets/js/166.9fddf3c4.js"><link rel="prefetch" href="/assets/js/167.d1910438.js"><link rel="prefetch" href="/assets/js/168.c53f614c.js"><link rel="prefetch" href="/assets/js/169.48dbebde.js"><link rel="prefetch" href="/assets/js/17.26630549.js"><link rel="prefetch" href="/assets/js/170.ea0a11a4.js"><link rel="prefetch" href="/assets/js/171.b29e1a48.js"><link rel="prefetch" href="/assets/js/172.ea11776c.js"><link rel="prefetch" href="/assets/js/173.28a7e0ed.js"><link rel="prefetch" href="/assets/js/174.da5e68da.js"><link rel="prefetch" href="/assets/js/175.ed980d63.js"><link rel="prefetch" href="/assets/js/176.4ee75968.js"><link rel="prefetch" href="/assets/js/177.395f1efc.js"><link rel="prefetch" href="/assets/js/178.0b0b4110.js"><link rel="prefetch" href="/assets/js/179.0e1b79a4.js"><link rel="prefetch" href="/assets/js/18.b0c23a1e.js"><link rel="prefetch" href="/assets/js/180.04a59016.js"><link rel="prefetch" href="/assets/js/181.eacb1554.js"><link rel="prefetch" href="/assets/js/182.9489324a.js"><link rel="prefetch" href="/assets/js/183.22a9fef4.js"><link rel="prefetch" href="/assets/js/184.e4f66aad.js"><link rel="prefetch" href="/assets/js/185.782b8fe1.js"><link rel="prefetch" href="/assets/js/186.c5fd1b18.js"><link rel="prefetch" href="/assets/js/187.ac950318.js"><link rel="prefetch" href="/assets/js/188.24855268.js"><link rel="prefetch" href="/assets/js/189.2ff9d69f.js"><link rel="prefetch" href="/assets/js/19.2350925e.js"><link rel="prefetch" href="/assets/js/190.ce6d47c4.js"><link rel="prefetch" href="/assets/js/191.cbe451ae.js"><link rel="prefetch" href="/assets/js/192.fad5864e.js"><link rel="prefetch" href="/assets/js/193.99a8159d.js"><link rel="prefetch" href="/assets/js/194.9dff990c.js"><link rel="prefetch" href="/assets/js/195.0326a347.js"><link rel="prefetch" href="/assets/js/196.46a566f6.js"><link rel="prefetch" href="/assets/js/197.4be39b40.js"><link rel="prefetch" href="/assets/js/198.d3a2df34.js"><link rel="prefetch" href="/assets/js/199.b0428697.js"><link rel="prefetch" href="/assets/js/20.99992852.js"><link rel="prefetch" href="/assets/js/200.bf1cab23.js"><link rel="prefetch" href="/assets/js/201.7078426f.js"><link rel="prefetch" href="/assets/js/202.63b3ae2e.js"><link rel="prefetch" href="/assets/js/203.2bee7d51.js"><link rel="prefetch" href="/assets/js/204.71993570.js"><link rel="prefetch" href="/assets/js/205.10d32d9a.js"><link rel="prefetch" href="/assets/js/206.9a2e1976.js"><link rel="prefetch" href="/assets/js/207.0a9ead6c.js"><link rel="prefetch" href="/assets/js/208.968951ab.js"><link rel="prefetch" href="/assets/js/209.ce388b6b.js"><link rel="prefetch" href="/assets/js/21.1ae37732.js"><link rel="prefetch" href="/assets/js/210.14e0728d.js"><link rel="prefetch" href="/assets/js/211.49dcc741.js"><link rel="prefetch" href="/assets/js/212.a9f0340d.js"><link rel="prefetch" href="/assets/js/213.8e2b09a8.js"><link rel="prefetch" href="/assets/js/214.74ca607d.js"><link rel="prefetch" href="/assets/js/215.7ab62f50.js"><link rel="prefetch" href="/assets/js/216.0c92c485.js"><link rel="prefetch" href="/assets/js/217.40d5dddc.js"><link rel="prefetch" href="/assets/js/218.13e60393.js"><link rel="prefetch" href="/assets/js/219.8d3c8006.js"><link rel="prefetch" href="/assets/js/22.f2d31ec6.js"><link rel="prefetch" href="/assets/js/220.d52056a1.js"><link rel="prefetch" href="/assets/js/221.f9470ab7.js"><link rel="prefetch" href="/assets/js/222.840d669c.js"><link rel="prefetch" href="/assets/js/223.4272af50.js"><link rel="prefetch" href="/assets/js/224.899c6786.js"><link rel="prefetch" href="/assets/js/225.be23e297.js"><link rel="prefetch" href="/assets/js/226.f891aa20.js"><link rel="prefetch" href="/assets/js/227.48c907e9.js"><link rel="prefetch" href="/assets/js/228.f4fcd5e3.js"><link rel="prefetch" href="/assets/js/229.ff60d5c1.js"><link rel="prefetch" href="/assets/js/23.a96d3c8c.js"><link rel="prefetch" href="/assets/js/230.568de4f4.js"><link rel="prefetch" href="/assets/js/231.c0465bbd.js"><link rel="prefetch" href="/assets/js/232.5cef1c01.js"><link rel="prefetch" href="/assets/js/233.499706ff.js"><link rel="prefetch" href="/assets/js/234.1f2f03d4.js"><link rel="prefetch" href="/assets/js/235.0125a657.js"><link rel="prefetch" href="/assets/js/236.5f119855.js"><link rel="prefetch" href="/assets/js/237.8ddd947b.js"><link rel="prefetch" href="/assets/js/238.185aeb33.js"><link rel="prefetch" href="/assets/js/239.01c5b429.js"><link rel="prefetch" href="/assets/js/24.2b2c66ca.js"><link rel="prefetch" href="/assets/js/240.8906b2a8.js"><link rel="prefetch" href="/assets/js/241.a213ed03.js"><link rel="prefetch" href="/assets/js/242.f0b35bda.js"><link rel="prefetch" href="/assets/js/243.3b5fb81b.js"><link rel="prefetch" href="/assets/js/244.922fd344.js"><link rel="prefetch" href="/assets/js/245.f3fd6635.js"><link rel="prefetch" href="/assets/js/246.eda8f093.js"><link rel="prefetch" href="/assets/js/247.68ab8530.js"><link rel="prefetch" href="/assets/js/248.229cd98c.js"><link rel="prefetch" href="/assets/js/249.834b8858.js"><link rel="prefetch" href="/assets/js/25.9b38179c.js"><link rel="prefetch" href="/assets/js/250.02b4ecef.js"><link rel="prefetch" href="/assets/js/251.b208144b.js"><link rel="prefetch" href="/assets/js/252.846569f7.js"><link rel="prefetch" href="/assets/js/253.4c6975a3.js"><link rel="prefetch" href="/assets/js/254.dd193812.js"><link rel="prefetch" href="/assets/js/255.6bf0bc8e.js"><link rel="prefetch" href="/assets/js/256.cf556c43.js"><link rel="prefetch" href="/assets/js/257.345a265d.js"><link rel="prefetch" href="/assets/js/258.5d203d9e.js"><link rel="prefetch" href="/assets/js/259.0ed5455a.js"><link rel="prefetch" href="/assets/js/26.4781bd5a.js"><link rel="prefetch" href="/assets/js/260.c954d5d2.js"><link rel="prefetch" href="/assets/js/261.df7926e3.js"><link rel="prefetch" href="/assets/js/262.3363153b.js"><link rel="prefetch" href="/assets/js/263.a57dec99.js"><link rel="prefetch" href="/assets/js/264.9f3a06e6.js"><link rel="prefetch" href="/assets/js/265.15ef9c0b.js"><link rel="prefetch" href="/assets/js/266.b9d146fa.js"><link rel="prefetch" href="/assets/js/267.f240c9eb.js"><link rel="prefetch" href="/assets/js/268.98a013e2.js"><link rel="prefetch" href="/assets/js/269.73c1d8ef.js"><link rel="prefetch" href="/assets/js/27.bbf9fc6d.js"><link rel="prefetch" href="/assets/js/270.afad5a4f.js"><link rel="prefetch" href="/assets/js/271.aa8bc64a.js"><link rel="prefetch" href="/assets/js/272.874ac668.js"><link rel="prefetch" href="/assets/js/273.4b67b374.js"><link rel="prefetch" href="/assets/js/274.68b25dde.js"><link rel="prefetch" href="/assets/js/275.ebab9315.js"><link rel="prefetch" href="/assets/js/276.29d1be7f.js"><link rel="prefetch" href="/assets/js/277.415ec925.js"><link rel="prefetch" href="/assets/js/278.16c7fc3d.js"><link rel="prefetch" href="/assets/js/279.256cab6a.js"><link rel="prefetch" href="/assets/js/28.8f277335.js"><link rel="prefetch" href="/assets/js/280.82889251.js"><link rel="prefetch" href="/assets/js/281.2bda2349.js"><link rel="prefetch" href="/assets/js/282.7fa42978.js"><link rel="prefetch" href="/assets/js/283.e4e4a9ac.js"><link rel="prefetch" href="/assets/js/284.ebf82356.js"><link rel="prefetch" href="/assets/js/285.0a438f8e.js"><link rel="prefetch" href="/assets/js/286.773ae4fb.js"><link rel="prefetch" href="/assets/js/287.13b6452a.js"><link rel="prefetch" href="/assets/js/288.f35f2f83.js"><link rel="prefetch" href="/assets/js/289.f7430738.js"><link rel="prefetch" href="/assets/js/29.8caeb90b.js"><link rel="prefetch" href="/assets/js/290.6da91943.js"><link rel="prefetch" href="/assets/js/291.bf7b0083.js"><link rel="prefetch" href="/assets/js/292.edc0f459.js"><link rel="prefetch" href="/assets/js/293.e0284ca8.js"><link rel="prefetch" href="/assets/js/294.3cb425c4.js"><link rel="prefetch" href="/assets/js/295.345f4f96.js"><link rel="prefetch" href="/assets/js/296.acd0509a.js"><link rel="prefetch" href="/assets/js/297.679b06d2.js"><link rel="prefetch" href="/assets/js/298.0271c62c.js"><link rel="prefetch" href="/assets/js/299.29c9b461.js"><link rel="prefetch" href="/assets/js/3.90a30a49.js"><link rel="prefetch" href="/assets/js/30.b3c40ab0.js"><link rel="prefetch" href="/assets/js/300.3c5e140e.js"><link rel="prefetch" href="/assets/js/301.e84c65aa.js"><link rel="prefetch" href="/assets/js/302.f90e8c94.js"><link rel="prefetch" href="/assets/js/303.62ba9b6f.js"><link rel="prefetch" href="/assets/js/304.49aa145c.js"><link rel="prefetch" href="/assets/js/305.c27efc95.js"><link rel="prefetch" href="/assets/js/306.8f433113.js"><link rel="prefetch" href="/assets/js/307.7e308dfb.js"><link rel="prefetch" href="/assets/js/308.aba1b8e5.js"><link rel="prefetch" href="/assets/js/309.bf24246a.js"><link rel="prefetch" href="/assets/js/31.af3adf79.js"><link rel="prefetch" href="/assets/js/310.53b7bb00.js"><link rel="prefetch" href="/assets/js/311.65a700b3.js"><link rel="prefetch" href="/assets/js/312.8f0ee5b2.js"><link rel="prefetch" href="/assets/js/313.29dea1ec.js"><link rel="prefetch" href="/assets/js/314.23a053df.js"><link rel="prefetch" href="/assets/js/315.f098573b.js"><link rel="prefetch" href="/assets/js/316.a061bdc3.js"><link rel="prefetch" href="/assets/js/317.fb2cceb7.js"><link rel="prefetch" href="/assets/js/318.627cb2bc.js"><link rel="prefetch" href="/assets/js/319.8b033c99.js"><link rel="prefetch" href="/assets/js/32.3b817f11.js"><link rel="prefetch" href="/assets/js/320.a0f95aee.js"><link rel="prefetch" href="/assets/js/321.715e1609.js"><link rel="prefetch" href="/assets/js/322.b765c668.js"><link rel="prefetch" href="/assets/js/323.6a41443f.js"><link rel="prefetch" href="/assets/js/324.50626ce1.js"><link rel="prefetch" href="/assets/js/325.a7cd17f0.js"><link rel="prefetch" href="/assets/js/326.aeebe105.js"><link rel="prefetch" href="/assets/js/327.6fe22e33.js"><link rel="prefetch" href="/assets/js/328.dfc72926.js"><link rel="prefetch" href="/assets/js/329.eed2f816.js"><link rel="prefetch" href="/assets/js/33.897e8424.js"><link rel="prefetch" href="/assets/js/330.6eb37623.js"><link rel="prefetch" href="/assets/js/331.ae298be4.js"><link rel="prefetch" href="/assets/js/332.e020bef7.js"><link rel="prefetch" href="/assets/js/333.a3659044.js"><link rel="prefetch" href="/assets/js/334.1c76bade.js"><link rel="prefetch" href="/assets/js/335.a508f4de.js"><link rel="prefetch" href="/assets/js/336.8b5e4ac1.js"><link rel="prefetch" href="/assets/js/337.3cc918fb.js"><link rel="prefetch" href="/assets/js/338.a5c271db.js"><link rel="prefetch" href="/assets/js/339.c2cc089b.js"><link rel="prefetch" href="/assets/js/34.6396378b.js"><link rel="prefetch" href="/assets/js/340.8f85233a.js"><link rel="prefetch" href="/assets/js/341.9722428b.js"><link rel="prefetch" href="/assets/js/342.2a499e4c.js"><link rel="prefetch" href="/assets/js/343.88309fd7.js"><link rel="prefetch" href="/assets/js/344.6f9f891e.js"><link rel="prefetch" href="/assets/js/345.fe312901.js"><link rel="prefetch" href="/assets/js/346.0e178041.js"><link rel="prefetch" href="/assets/js/347.f6ca93ec.js"><link rel="prefetch" href="/assets/js/348.757832e9.js"><link rel="prefetch" href="/assets/js/349.ecd0f0b8.js"><link rel="prefetch" href="/assets/js/35.a9f83bb9.js"><link rel="prefetch" href="/assets/js/350.4eceec79.js"><link rel="prefetch" href="/assets/js/351.c12795b9.js"><link rel="prefetch" href="/assets/js/352.213f6a13.js"><link rel="prefetch" href="/assets/js/353.44987602.js"><link rel="prefetch" href="/assets/js/354.c5515b44.js"><link rel="prefetch" href="/assets/js/355.9e86cdcd.js"><link rel="prefetch" href="/assets/js/356.e410314c.js"><link rel="prefetch" href="/assets/js/357.490267a8.js"><link rel="prefetch" href="/assets/js/358.155defaa.js"><link rel="prefetch" href="/assets/js/359.00ecad3c.js"><link rel="prefetch" href="/assets/js/36.ff1983df.js"><link rel="prefetch" href="/assets/js/360.2b8386ee.js"><link rel="prefetch" href="/assets/js/361.388984a7.js"><link rel="prefetch" href="/assets/js/362.04ec936f.js"><link rel="prefetch" href="/assets/js/363.b95a343c.js"><link rel="prefetch" href="/assets/js/364.db323289.js"><link rel="prefetch" href="/assets/js/365.55d6449c.js"><link rel="prefetch" href="/assets/js/366.af2d3f70.js"><link rel="prefetch" href="/assets/js/367.c7612247.js"><link rel="prefetch" href="/assets/js/368.63f34205.js"><link rel="prefetch" href="/assets/js/369.5de7e28f.js"><link rel="prefetch" href="/assets/js/37.4b7b968f.js"><link rel="prefetch" href="/assets/js/370.32376b34.js"><link rel="prefetch" href="/assets/js/371.c80a270c.js"><link rel="prefetch" href="/assets/js/372.cea05955.js"><link rel="prefetch" href="/assets/js/373.7b682eba.js"><link rel="prefetch" href="/assets/js/374.e178c112.js"><link rel="prefetch" href="/assets/js/375.b12b31c3.js"><link rel="prefetch" href="/assets/js/376.4f84ab84.js"><link rel="prefetch" href="/assets/js/377.b50bcd82.js"><link rel="prefetch" href="/assets/js/378.37dea386.js"><link rel="prefetch" href="/assets/js/379.92a3e6c1.js"><link rel="prefetch" href="/assets/js/38.e4079b66.js"><link rel="prefetch" href="/assets/js/380.35992c37.js"><link rel="prefetch" href="/assets/js/381.13953ae7.js"><link rel="prefetch" href="/assets/js/382.99f19baf.js"><link rel="prefetch" href="/assets/js/383.04b581ec.js"><link rel="prefetch" href="/assets/js/384.90540078.js"><link rel="prefetch" href="/assets/js/385.9c43613a.js"><link rel="prefetch" href="/assets/js/386.24f1c8ee.js"><link rel="prefetch" href="/assets/js/387.e1504e7f.js"><link rel="prefetch" href="/assets/js/388.cad745d2.js"><link rel="prefetch" href="/assets/js/389.c34d6a02.js"><link rel="prefetch" href="/assets/js/39.9db8ff5b.js"><link rel="prefetch" href="/assets/js/390.7e0eb533.js"><link rel="prefetch" href="/assets/js/391.71915b9a.js"><link rel="prefetch" href="/assets/js/392.e34bca6d.js"><link rel="prefetch" href="/assets/js/393.cbb1210c.js"><link rel="prefetch" href="/assets/js/394.71d2e8ec.js"><link rel="prefetch" href="/assets/js/395.3658697b.js"><link rel="prefetch" href="/assets/js/396.99fc1bcb.js"><link rel="prefetch" href="/assets/js/397.12956242.js"><link rel="prefetch" href="/assets/js/398.362a2320.js"><link rel="prefetch" href="/assets/js/399.e3af3efb.js"><link rel="prefetch" href="/assets/js/4.ed35146c.js"><link rel="prefetch" href="/assets/js/40.9b3c111a.js"><link rel="prefetch" href="/assets/js/400.be8f378d.js"><link rel="prefetch" href="/assets/js/401.7855cda3.js"><link rel="prefetch" href="/assets/js/402.1f68f76a.js"><link rel="prefetch" href="/assets/js/403.a84e1ef3.js"><link rel="prefetch" href="/assets/js/404.f402bfe7.js"><link rel="prefetch" href="/assets/js/405.f34e5c3e.js"><link rel="prefetch" href="/assets/js/406.7309b1b5.js"><link rel="prefetch" href="/assets/js/407.59d98fc7.js"><link rel="prefetch" href="/assets/js/408.743645bb.js"><link rel="prefetch" href="/assets/js/409.e2a4b865.js"><link rel="prefetch" href="/assets/js/41.1fc60b69.js"><link rel="prefetch" href="/assets/js/410.0823fd90.js"><link rel="prefetch" href="/assets/js/411.ee162292.js"><link rel="prefetch" href="/assets/js/412.0a8a0d30.js"><link rel="prefetch" href="/assets/js/413.477477a2.js"><link rel="prefetch" href="/assets/js/414.75355711.js"><link rel="prefetch" href="/assets/js/415.37d7a317.js"><link rel="prefetch" href="/assets/js/416.cdf693cc.js"><link rel="prefetch" href="/assets/js/417.f88409c1.js"><link rel="prefetch" href="/assets/js/418.af9df621.js"><link rel="prefetch" href="/assets/js/419.9e94a2fa.js"><link rel="prefetch" href="/assets/js/42.186cd9a4.js"><link rel="prefetch" href="/assets/js/420.fcd284c3.js"><link rel="prefetch" href="/assets/js/421.d9ad6856.js"><link rel="prefetch" href="/assets/js/422.9e3a6908.js"><link rel="prefetch" href="/assets/js/423.f6128567.js"><link rel="prefetch" href="/assets/js/424.9eb46659.js"><link rel="prefetch" href="/assets/js/425.a23b9c70.js"><link rel="prefetch" href="/assets/js/426.0d22e3c4.js"><link rel="prefetch" href="/assets/js/427.a394d3ae.js"><link rel="prefetch" href="/assets/js/428.ab6b507a.js"><link rel="prefetch" href="/assets/js/429.9346925c.js"><link rel="prefetch" href="/assets/js/43.404f41b6.js"><link rel="prefetch" href="/assets/js/430.53ef27da.js"><link rel="prefetch" href="/assets/js/431.c48a69ad.js"><link rel="prefetch" href="/assets/js/432.8bec03cf.js"><link rel="prefetch" href="/assets/js/433.bc4f51ba.js"><link rel="prefetch" href="/assets/js/434.6a27ff5e.js"><link rel="prefetch" href="/assets/js/435.528944ba.js"><link rel="prefetch" href="/assets/js/436.2fbbda0d.js"><link rel="prefetch" href="/assets/js/437.42cbd75e.js"><link rel="prefetch" href="/assets/js/438.1a8ce223.js"><link rel="prefetch" href="/assets/js/439.8fde150b.js"><link rel="prefetch" href="/assets/js/44.86df32f7.js"><link rel="prefetch" href="/assets/js/440.5fc14536.js"><link rel="prefetch" href="/assets/js/441.57b25656.js"><link rel="prefetch" href="/assets/js/442.5a1f00af.js"><link rel="prefetch" href="/assets/js/443.e5c1af8b.js"><link rel="prefetch" href="/assets/js/444.642373f2.js"><link rel="prefetch" href="/assets/js/445.cebdb177.js"><link rel="prefetch" href="/assets/js/446.0cee4c07.js"><link rel="prefetch" href="/assets/js/447.0ebe4cd2.js"><link rel="prefetch" href="/assets/js/448.733a0f64.js"><link rel="prefetch" href="/assets/js/449.e0e9066f.js"><link rel="prefetch" href="/assets/js/45.c6912659.js"><link rel="prefetch" href="/assets/js/450.5139ca2c.js"><link rel="prefetch" href="/assets/js/451.07f34d86.js"><link rel="prefetch" href="/assets/js/452.a7876410.js"><link rel="prefetch" href="/assets/js/453.85b05369.js"><link rel="prefetch" href="/assets/js/454.1604b37e.js"><link rel="prefetch" href="/assets/js/455.f0fdb0e9.js"><link rel="prefetch" href="/assets/js/456.d5867a5c.js"><link rel="prefetch" href="/assets/js/457.34cbe54e.js"><link rel="prefetch" href="/assets/js/458.c8109693.js"><link rel="prefetch" href="/assets/js/459.a4627e96.js"><link rel="prefetch" href="/assets/js/46.22221e8c.js"><link rel="prefetch" href="/assets/js/460.0e16995b.js"><link rel="prefetch" href="/assets/js/461.fad5fa6c.js"><link rel="prefetch" href="/assets/js/462.35393f6f.js"><link rel="prefetch" href="/assets/js/463.509b2f5e.js"><link rel="prefetch" href="/assets/js/464.7902a40b.js"><link rel="prefetch" href="/assets/js/465.b44b0b3d.js"><link rel="prefetch" href="/assets/js/466.c3262b6e.js"><link rel="prefetch" href="/assets/js/467.b767ba55.js"><link rel="prefetch" href="/assets/js/468.78d1eb8d.js"><link rel="prefetch" href="/assets/js/469.d931cce5.js"><link rel="prefetch" href="/assets/js/47.92a88046.js"><link rel="prefetch" href="/assets/js/470.346b482b.js"><link rel="prefetch" href="/assets/js/471.6f42f729.js"><link rel="prefetch" href="/assets/js/472.9d3095d8.js"><link rel="prefetch" href="/assets/js/473.b422233d.js"><link rel="prefetch" href="/assets/js/474.f99827b7.js"><link rel="prefetch" href="/assets/js/475.13f3128e.js"><link rel="prefetch" href="/assets/js/476.5212ef64.js"><link rel="prefetch" href="/assets/js/477.3d8446cd.js"><link rel="prefetch" href="/assets/js/478.7fa09636.js"><link rel="prefetch" href="/assets/js/479.b930254b.js"><link rel="prefetch" href="/assets/js/48.b9fb8398.js"><link rel="prefetch" href="/assets/js/480.b877ec10.js"><link rel="prefetch" href="/assets/js/481.6b15bd8c.js"><link rel="prefetch" href="/assets/js/482.a1b31c18.js"><link rel="prefetch" href="/assets/js/483.b478b049.js"><link rel="prefetch" href="/assets/js/484.a9be98fc.js"><link rel="prefetch" href="/assets/js/485.b0c88413.js"><link rel="prefetch" href="/assets/js/486.9f8eb33c.js"><link rel="prefetch" href="/assets/js/487.4c2735e6.js"><link rel="prefetch" href="/assets/js/488.1187d6fe.js"><link rel="prefetch" href="/assets/js/489.5e226786.js"><link rel="prefetch" href="/assets/js/49.8dba3690.js"><link rel="prefetch" href="/assets/js/490.96b7335b.js"><link rel="prefetch" href="/assets/js/491.2215e18d.js"><link rel="prefetch" href="/assets/js/492.decc0c8b.js"><link rel="prefetch" href="/assets/js/493.eb1c54f9.js"><link rel="prefetch" href="/assets/js/494.c38907f6.js"><link rel="prefetch" href="/assets/js/495.8a6f91c9.js"><link rel="prefetch" href="/assets/js/496.f07f9895.js"><link rel="prefetch" href="/assets/js/497.39a289cd.js"><link rel="prefetch" href="/assets/js/498.c6cd8db6.js"><link rel="prefetch" href="/assets/js/499.88b92ee5.js"><link rel="prefetch" href="/assets/js/5.c6212358.js"><link rel="prefetch" href="/assets/js/50.a3904171.js"><link rel="prefetch" href="/assets/js/500.a8b1077c.js"><link rel="prefetch" href="/assets/js/501.bd65ed85.js"><link rel="prefetch" href="/assets/js/502.de27247a.js"><link rel="prefetch" href="/assets/js/503.3bab7bca.js"><link rel="prefetch" href="/assets/js/504.985e3dc5.js"><link rel="prefetch" href="/assets/js/505.0e7dffcc.js"><link rel="prefetch" href="/assets/js/506.a6911997.js"><link rel="prefetch" href="/assets/js/507.0744876e.js"><link rel="prefetch" href="/assets/js/508.4a467195.js"><link rel="prefetch" href="/assets/js/509.bd53eeb5.js"><link rel="prefetch" href="/assets/js/51.121d3e0b.js"><link rel="prefetch" href="/assets/js/510.243e05fc.js"><link rel="prefetch" href="/assets/js/511.58742d07.js"><link rel="prefetch" href="/assets/js/512.1088ee5c.js"><link rel="prefetch" href="/assets/js/513.1913e5ea.js"><link rel="prefetch" href="/assets/js/514.66c71f3d.js"><link rel="prefetch" href="/assets/js/515.adad3da2.js"><link rel="prefetch" href="/assets/js/516.e63a53ce.js"><link rel="prefetch" href="/assets/js/517.96d2bde5.js"><link rel="prefetch" href="/assets/js/518.a33eb8a2.js"><link rel="prefetch" href="/assets/js/519.357142bc.js"><link rel="prefetch" href="/assets/js/52.3b51a70a.js"><link rel="prefetch" href="/assets/js/520.d613f439.js"><link rel="prefetch" href="/assets/js/521.42faee9e.js"><link rel="prefetch" href="/assets/js/522.f12a6a4d.js"><link rel="prefetch" href="/assets/js/523.02853581.js"><link rel="prefetch" href="/assets/js/524.a2666cc0.js"><link rel="prefetch" href="/assets/js/525.fe00de1d.js"><link rel="prefetch" href="/assets/js/526.836568c5.js"><link rel="prefetch" href="/assets/js/527.8cd2af63.js"><link rel="prefetch" href="/assets/js/528.0b7365fd.js"><link rel="prefetch" href="/assets/js/529.43fa2e50.js"><link rel="prefetch" href="/assets/js/53.cdae485c.js"><link rel="prefetch" href="/assets/js/530.dcf6a67d.js"><link rel="prefetch" href="/assets/js/531.0a2c3b14.js"><link rel="prefetch" href="/assets/js/532.ea07a008.js"><link rel="prefetch" href="/assets/js/533.6055e01f.js"><link rel="prefetch" href="/assets/js/534.51632c3d.js"><link rel="prefetch" href="/assets/js/535.78fca5f3.js"><link rel="prefetch" href="/assets/js/536.a1a6b416.js"><link rel="prefetch" href="/assets/js/537.8598378e.js"><link rel="prefetch" href="/assets/js/538.1e52acaa.js"><link rel="prefetch" href="/assets/js/539.1cdafffa.js"><link rel="prefetch" href="/assets/js/54.6bec8df9.js"><link rel="prefetch" href="/assets/js/540.e568849b.js"><link rel="prefetch" href="/assets/js/541.945e1605.js"><link rel="prefetch" href="/assets/js/542.849cce79.js"><link rel="prefetch" href="/assets/js/543.f883cd7b.js"><link rel="prefetch" href="/assets/js/544.82371332.js"><link rel="prefetch" href="/assets/js/545.cad7564d.js"><link rel="prefetch" href="/assets/js/546.34b66f1c.js"><link rel="prefetch" href="/assets/js/547.de4b0b16.js"><link rel="prefetch" href="/assets/js/548.1ea6496b.js"><link rel="prefetch" href="/assets/js/549.af4e6988.js"><link rel="prefetch" href="/assets/js/55.434a3f2d.js"><link rel="prefetch" href="/assets/js/550.96e95735.js"><link rel="prefetch" href="/assets/js/551.f169353b.js"><link rel="prefetch" href="/assets/js/552.34941581.js"><link rel="prefetch" href="/assets/js/553.c5eb9a15.js"><link rel="prefetch" href="/assets/js/554.6572e1ae.js"><link rel="prefetch" href="/assets/js/555.f4434f7c.js"><link rel="prefetch" href="/assets/js/556.f8b3fd5b.js"><link rel="prefetch" href="/assets/js/557.d7158b72.js"><link rel="prefetch" href="/assets/js/558.e5071c1c.js"><link rel="prefetch" href="/assets/js/559.7a9fc855.js"><link rel="prefetch" href="/assets/js/56.f90b7f70.js"><link rel="prefetch" href="/assets/js/560.8b420031.js"><link rel="prefetch" href="/assets/js/561.2011eafe.js"><link rel="prefetch" href="/assets/js/562.3b87b54b.js"><link rel="prefetch" href="/assets/js/563.80149f2c.js"><link rel="prefetch" href="/assets/js/564.9d50f137.js"><link rel="prefetch" href="/assets/js/565.d18f2bb7.js"><link rel="prefetch" href="/assets/js/566.b8361281.js"><link rel="prefetch" href="/assets/js/567.09f477ad.js"><link rel="prefetch" href="/assets/js/568.c7290521.js"><link rel="prefetch" href="/assets/js/569.b13de1cf.js"><link rel="prefetch" href="/assets/js/57.b8199d69.js"><link rel="prefetch" href="/assets/js/570.96149def.js"><link rel="prefetch" href="/assets/js/571.1d918cc7.js"><link rel="prefetch" href="/assets/js/572.91cff7ad.js"><link rel="prefetch" href="/assets/js/573.e83fecab.js"><link rel="prefetch" href="/assets/js/574.f23266ff.js"><link rel="prefetch" href="/assets/js/575.1e588673.js"><link rel="prefetch" href="/assets/js/576.62e50cb6.js"><link rel="prefetch" href="/assets/js/577.443555e2.js"><link rel="prefetch" href="/assets/js/578.961c4fce.js"><link rel="prefetch" href="/assets/js/579.eb07ae46.js"><link rel="prefetch" href="/assets/js/58.1d97b00b.js"><link rel="prefetch" href="/assets/js/580.e6b8aee2.js"><link rel="prefetch" href="/assets/js/581.32539161.js"><link rel="prefetch" href="/assets/js/582.a1425a78.js"><link rel="prefetch" href="/assets/js/583.d6328aab.js"><link rel="prefetch" href="/assets/js/584.4ae96222.js"><link rel="prefetch" href="/assets/js/585.12eff688.js"><link rel="prefetch" href="/assets/js/586.eb3e494c.js"><link rel="prefetch" href="/assets/js/587.e03462d3.js"><link rel="prefetch" href="/assets/js/588.28774c19.js"><link rel="prefetch" href="/assets/js/589.c046a419.js"><link rel="prefetch" href="/assets/js/59.a0dc9381.js"><link rel="prefetch" href="/assets/js/590.b50ca1f6.js"><link rel="prefetch" href="/assets/js/591.6f35ed1e.js"><link rel="prefetch" href="/assets/js/592.28722cc2.js"><link rel="prefetch" href="/assets/js/593.4b0e9ccb.js"><link rel="prefetch" href="/assets/js/594.6cbec59b.js"><link rel="prefetch" href="/assets/js/595.729754e4.js"><link rel="prefetch" href="/assets/js/596.c69663ef.js"><link rel="prefetch" href="/assets/js/597.416f28b9.js"><link rel="prefetch" href="/assets/js/598.6e2fa6c6.js"><link rel="prefetch" href="/assets/js/599.22183717.js"><link rel="prefetch" href="/assets/js/60.93b6c9cf.js"><link rel="prefetch" href="/assets/js/61.9e4325b3.js"><link rel="prefetch" href="/assets/js/62.a32edcde.js"><link rel="prefetch" href="/assets/js/63.c29d51b8.js"><link rel="prefetch" href="/assets/js/64.64fb30d6.js"><link rel="prefetch" href="/assets/js/65.cb11a537.js"><link rel="prefetch" href="/assets/js/66.8ce66e17.js"><link rel="prefetch" href="/assets/js/67.70b84b16.js"><link rel="prefetch" href="/assets/js/68.76625bb4.js"><link rel="prefetch" href="/assets/js/69.96026823.js"><link rel="prefetch" href="/assets/js/7.e21823e3.js"><link rel="prefetch" href="/assets/js/70.85e51c54.js"><link rel="prefetch" href="/assets/js/71.e37c665e.js"><link rel="prefetch" href="/assets/js/72.5fab0457.js"><link rel="prefetch" href="/assets/js/73.42b323a0.js"><link rel="prefetch" href="/assets/js/74.9a577275.js"><link rel="prefetch" href="/assets/js/75.f92cb917.js"><link rel="prefetch" href="/assets/js/76.349cf956.js"><link rel="prefetch" href="/assets/js/77.68c1d13d.js"><link rel="prefetch" href="/assets/js/78.85bf3cf2.js"><link rel="prefetch" href="/assets/js/79.1bb973f3.js"><link rel="prefetch" href="/assets/js/8.4c1add94.js"><link rel="prefetch" href="/assets/js/80.83b9f94d.js"><link rel="prefetch" href="/assets/js/81.12f858bb.js"><link rel="prefetch" href="/assets/js/82.b3d6de39.js"><link rel="prefetch" href="/assets/js/83.6d8ba9ac.js"><link rel="prefetch" href="/assets/js/84.a03f7375.js"><link rel="prefetch" href="/assets/js/85.032de386.js"><link rel="prefetch" href="/assets/js/86.ec72191b.js"><link rel="prefetch" href="/assets/js/87.06245199.js"><link rel="prefetch" href="/assets/js/88.f62a1d2f.js"><link rel="prefetch" href="/assets/js/89.aa5d9cb4.js"><link rel="prefetch" href="/assets/js/9.2c0bab4f.js"><link rel="prefetch" href="/assets/js/90.a0602834.js"><link rel="prefetch" href="/assets/js/91.010fcd2f.js"><link rel="prefetch" href="/assets/js/92.165f59ce.js"><link rel="prefetch" href="/assets/js/93.1b6687ac.js"><link rel="prefetch" href="/assets/js/94.b89f9796.js"><link rel="prefetch" href="/assets/js/95.06790275.js"><link rel="prefetch" href="/assets/js/96.84be3bc8.js"><link rel="prefetch" href="/assets/js/97.0e8810f8.js"><link rel="prefetch" href="/assets/js/98.1b275d03.js"><link rel="prefetch" href="/assets/js/99.babd6741.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.490aa64e.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open no-sidebar"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/logo.png" alt="二丫讲梵" class="logo"> <span class="site-name can-hide">二丫讲梵</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维" class="dropdown-title"><a href="/ops/" aria-current="page" class="link-title router-link-exact-active router-link-active">运维</a> <span class="title" style="display:none;">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/027a17/" class="nav-link">最佳实践</a></li><li class="dropdown-item"><!----> <a href="/pages/29.html" class="nav-link">迎刃而解</a></li><li class="dropdown-item"><!----> <a href="/pages/930.html" class="nav-link">Nginx</a></li><li class="dropdown-item"><!----> <a href="/pages/2782.html" class="nav-link">Php</a></li><li class="dropdown-item"><!----> <a href="/pages/596.html" class="nav-link">Zabbix</a></li><li class="dropdown-item"><!----> <a href="/pages/2468.html" class="nav-link">Prometheus</a></li><li class="dropdown-item"><!----> <a href="/pages/5380.html" class="nav-link">Grafana</a></li><li class="dropdown-item"><!----> <a href="/pages/5279.html" class="nav-link">CentOS</a></li><li class="dropdown-item"><!----> <a href="/pages/1847.html" class="nav-link">Docker</a></li><li class="dropdown-item"><!----> <a href="/pages/5173.html" class="nav-link">Ansible</a></li><li class="dropdown-item"><!----> <a href="/pages/3410.html" class="nav-link">Ldap</a></li><li class="dropdown-item"><!----> <a href="/pages/243.html" class="nav-link">Gitlab</a></li><li class="dropdown-item"><!----> <a href="/pages/2951.html" class="nav-link">Kafka</a></li><li class="dropdown-item"><!----> <a href="/pages/4050.html" class="nav-link">Etcd</a></li><li class="dropdown-item"><!----> <a href="/pages/f61d95/" class="nav-link">Consul</a></li><li class="dropdown-item"><!----> <a href="/pages/285.html" class="nav-link">Other</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="专题" class="dropdown-title"><a href="/topic/" class="link-title">专题</a> <span class="title" style="display:none;">专题</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/2351.html" class="nav-link">ELK</a></li><li class="dropdown-item"><!----> <a href="/pages/1742.html" class="nav-link">K8S</a></li><li class="dropdown-item"><!----> <a href="/pages/45c5da/" class="nav-link">Nexus</a></li><li class="dropdown-item"><!----> <a href="/pages/2415.html" class="nav-link">Jenkins</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生活" class="dropdown-title"><a href="/life/" class="link-title">生活</a> <span class="title" style="display:none;">生活</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/2714.html" class="nav-link">随写编年</a></li><li class="dropdown-item"><!----> <a href="/pages/2442.html" class="nav-link">家人物语</a></li><li class="dropdown-item"><!----> <a href="/pages/fdb9f6/" class="nav-link">追忆青春</a></li><li class="dropdown-item"><!----> <a href="/pages/3993f9/" class="nav-link">父亲的朋友圈</a></li><li class="dropdown-item"><!----> <a href="/pages/184.html" class="nav-link">电影音乐</a></li><li class="dropdown-item"><!----> <a href="/pages/136.html" class="nav-link">效率工具</a></li><li class="dropdown-item"><!----> <a href="/pages/844.html" class="nav-link">博客相关</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程" class="dropdown-title"><a href="/code/" class="link-title">编程</a> <span class="title" style="display:none;">编程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/5164.html" class="nav-link">Vue</a></li><li class="dropdown-item"><!----> <a href="/pages/531.html" class="nav-link">Shell</a></li><li class="dropdown-item"><!----> <a href="/pages/aeab08/" class="nav-link">Golang</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="周刊" class="dropdown-title"><a href="/pages/11c668/" class="link-title">周刊</a> <span class="title" style="display:none;">周刊</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/11c668/" class="nav-link">学习周刊</a></li><li class="dropdown-item"><!----> <a href="/pages/bcc523/" class="nav-link">Obsidian插件周刊</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/categories/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="页面" class="dropdown-title"><a href="/friends/" class="link-title">页面</a> <span class="title" style="display:none;">页面</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/friends/" class="nav-link">友链</a></li><li class="dropdown-item"><!----> <a href="/nav/" class="nav-link">导航</a></li><li class="dropdown-item"><!----> <a href="/reward/" class="nav-link">打赏</a></li><li class="dropdown-item"><!----> <a href="http://m.eryajf.net" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  镜像
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="https://travellings.link" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  开往
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/eryajf/eryajf.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="/img/dengxia.gif"> <div class="blogger-info"><h3>二丫讲梵</h3> <span>行者常至，为者常成</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维" class="dropdown-title"><a href="/ops/" aria-current="page" class="link-title router-link-exact-active router-link-active">运维</a> <span class="title" style="display:none;">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/027a17/" class="nav-link">最佳实践</a></li><li class="dropdown-item"><!----> <a href="/pages/29.html" class="nav-link">迎刃而解</a></li><li class="dropdown-item"><!----> <a href="/pages/930.html" class="nav-link">Nginx</a></li><li class="dropdown-item"><!----> <a href="/pages/2782.html" class="nav-link">Php</a></li><li class="dropdown-item"><!----> <a href="/pages/596.html" class="nav-link">Zabbix</a></li><li class="dropdown-item"><!----> <a href="/pages/2468.html" class="nav-link">Prometheus</a></li><li class="dropdown-item"><!----> <a href="/pages/5380.html" class="nav-link">Grafana</a></li><li class="dropdown-item"><!----> <a href="/pages/5279.html" class="nav-link">CentOS</a></li><li class="dropdown-item"><!----> <a href="/pages/1847.html" class="nav-link">Docker</a></li><li class="dropdown-item"><!----> <a href="/pages/5173.html" class="nav-link">Ansible</a></li><li class="dropdown-item"><!----> <a href="/pages/3410.html" class="nav-link">Ldap</a></li><li class="dropdown-item"><!----> <a href="/pages/243.html" class="nav-link">Gitlab</a></li><li class="dropdown-item"><!----> <a href="/pages/2951.html" class="nav-link">Kafka</a></li><li class="dropdown-item"><!----> <a href="/pages/4050.html" class="nav-link">Etcd</a></li><li class="dropdown-item"><!----> <a href="/pages/f61d95/" class="nav-link">Consul</a></li><li class="dropdown-item"><!----> <a href="/pages/285.html" class="nav-link">Other</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="专题" class="dropdown-title"><a href="/topic/" class="link-title">专题</a> <span class="title" style="display:none;">专题</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/2351.html" class="nav-link">ELK</a></li><li class="dropdown-item"><!----> <a href="/pages/1742.html" class="nav-link">K8S</a></li><li class="dropdown-item"><!----> <a href="/pages/45c5da/" class="nav-link">Nexus</a></li><li class="dropdown-item"><!----> <a href="/pages/2415.html" class="nav-link">Jenkins</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生活" class="dropdown-title"><a href="/life/" class="link-title">生活</a> <span class="title" style="display:none;">生活</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/2714.html" class="nav-link">随写编年</a></li><li class="dropdown-item"><!----> <a href="/pages/2442.html" class="nav-link">家人物语</a></li><li class="dropdown-item"><!----> <a href="/pages/fdb9f6/" class="nav-link">追忆青春</a></li><li class="dropdown-item"><!----> <a href="/pages/3993f9/" class="nav-link">父亲的朋友圈</a></li><li class="dropdown-item"><!----> <a href="/pages/184.html" class="nav-link">电影音乐</a></li><li class="dropdown-item"><!----> <a href="/pages/136.html" class="nav-link">效率工具</a></li><li class="dropdown-item"><!----> <a href="/pages/844.html" class="nav-link">博客相关</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程" class="dropdown-title"><a href="/code/" class="link-title">编程</a> <span class="title" style="display:none;">编程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/5164.html" class="nav-link">Vue</a></li><li class="dropdown-item"><!----> <a href="/pages/531.html" class="nav-link">Shell</a></li><li class="dropdown-item"><!----> <a href="/pages/aeab08/" class="nav-link">Golang</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="周刊" class="dropdown-title"><a href="/pages/11c668/" class="link-title">周刊</a> <span class="title" style="display:none;">周刊</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/11c668/" class="nav-link">学习周刊</a></li><li class="dropdown-item"><!----> <a href="/pages/bcc523/" class="nav-link">Obsidian插件周刊</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/categories/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="页面" class="dropdown-title"><a href="/friends/" class="link-title">页面</a> <span class="title" style="display:none;">页面</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/friends/" class="nav-link">友链</a></li><li class="dropdown-item"><!----> <a href="/nav/" class="nav-link">导航</a></li><li class="dropdown-item"><!----> <a href="/reward/" class="nav-link">打赏</a></li><li class="dropdown-item"><!----> <a href="http://m.eryajf.net" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  镜像
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="https://travellings.link" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  开往
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/eryajf/eryajf.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/ops/" aria-current="page" class="active sidebar-link">运维观止</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/ops/#写作感怀" class="sidebar-link">写作感怀</a></li></ul></li><li><a href="/topic/" class="sidebar-link">系列专题</a></li><li><a href="/life/" class="sidebar-link">闲言碎语</a></li><li><a href="/code/" class="sidebar-link">编程世界</a></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><!----> <div class="theme-vdoing-content theme-vdoing-content" data-v-50c0d782><div class="column-wrapper" data-v-50c0d782><img src="/img/ops.png" data-v-50c0d782> <dl class="column-info" data-v-50c0d782><dt class="title" data-v-50c0d782>运维观止</dt> <dd class="description" data-v-50c0d782>运维笔记、效率工具、迎刃而解</dd></dl></div> <div class="catalogue-wrapper" data-v-50c0d782><div class="catalogue-title" data-v-50c0d782>目录</div> <div class="catalogue-content" data-v-50c0d782><dl data-v-50c0d782><dt id="最佳实践" data-v-50c0d782><a href="#最佳实践" class="header-anchor" data-v-50c0d782>#</a>
+            1. 最佳实践
+          </dt> <dd data-v-50c0d782><a href="/pages/d7bc9f/" data-v-50c0d782>1-1. 一句话经验
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/027a17/" data-v-50c0d782>1-2. 基于CNAME解析实践的域名优雅方案
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/252.html" data-v-50c0d782>1-3. 如何配置历史命令中有详细的时间戳
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1395.html" data-v-50c0d782>1-4. 建设一个运维外挂的最佳实践
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2836.html" data-v-50c0d782>1-5. 关于打包压缩几种格式（gzip,bzip2,xz）的试验对比
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/3158.html" data-v-50c0d782>1-6. 利用谷歌浏览器自定义agent监听日志来调试服务
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/3641.html" data-v-50c0d782>1-7. fdisk，parted使用非交互式方式对磁盘进行分区操作
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/bd0079/" data-v-50c0d782>1-8. GitLab部署的最佳实践
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/042695/" data-v-50c0d782>1-9. GitLab全局搜索之SourceGraph
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a></dd></dl><dl data-v-50c0d782><dt id="迎刃而解" data-v-50c0d782><a href="#迎刃而解" class="header-anchor" data-v-50c0d782>#</a>
+            2. 迎刃而解
+          </dt> <dd data-v-50c0d782><a href="/pages/29.html" data-v-50c0d782>2-1. 记一次关于tomcat的踩坑的经历
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/55.html" data-v-50c0d782>2-2. 解决VNC连接闪退的问题
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/6d00b2/" data-v-50c0d782>2-3. 一次升级线上服务器内核的经历
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/258.html" data-v-50c0d782>2-4. 记一次给笔记安装Windows系统遇到的一些坑
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/260.html" data-v-50c0d782>2-5. 解决一个新安装系统使用yum时报错的问题
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1117.html" data-v-50c0d782>2-6. 服务器存储不够了之直接挂载一块儿新磁盘的操作
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1130.html" data-v-50c0d782>2-7. 服务器存储不够了之在原逻辑卷上扩容的操作
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1465.html" data-v-50c0d782>2-8. 解决php-fpm启动之后没有9000端口的问题
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1494.html" data-v-50c0d782>2-9. 解决MySQL问题：Got error 28 from storage engine
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1672.html" data-v-50c0d782>2-10. 解决git clone报错Peer’s Certificate has expired的问题
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2104.html" data-v-50c0d782>2-11. Linux的普通用户bash突然报错bash fork retry No child processes的解决办法
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2266.html" data-v-50c0d782>2-12. 分析解决脚本执行时总是报出command not found
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/4934.html" data-v-50c0d782>2-13. confluence数据目录满了
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/5008.html" data-v-50c0d782>2-14. 利用prlimit动态修改应用进程的最大文件打开数
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/d644b9/" data-v-50c0d782>2-15. vim复制代码包含注释时格式会乱掉解决办法
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/03fc7f/" data-v-50c0d782>2-16. python如何快速迁移依赖库
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/a1728a/" data-v-50c0d782>2-17. YUM安装提示--skip-broken-to-work-around-the-problem
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/c24db7/" data-v-50c0d782>2-18. 请求nginx返回413的错误
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/9c7927/" data-v-50c0d782>2-19. Linux系统环境变量被覆盖所有命令找不到怎么办
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/7e655f/" data-v-50c0d782>2-20. Centos7更改yum源为阿里云
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/17f42d/" data-v-50c0d782>2-21. node编译报错
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/3c246c/" data-v-50c0d782>2-22. git-commit错了如何更改
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/eced71/" data-v-50c0d782>2-23. 关于执行journalctl时的一个报错
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/f032de/" data-v-50c0d782>2-24. yum安装epel之后报错
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/60fec5/" data-v-50c0d782>2-25. umount卸载磁盘的时候提示busy
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/634d21/" data-v-50c0d782>2-26. pip安装依赖时报ssl的问题
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/ab3547/" data-v-50c0d782>2-27. lavel框架缓存目录的问题
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a></dd></dl><dl data-v-50c0d782><dt id="Nginx" data-v-50c0d782><a href="#Nginx" class="header-anchor" data-v-50c0d782>#</a>
+            3. Nginx
+          </dt> <dd data-v-50c0d782><a href="/pages/930.html" data-v-50c0d782>3-1. 关于nginx请求头中有下划线_的坑
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1086.html" data-v-50c0d782>3-2. 利用nginx+sftp实现一个可供用户下载的服务
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1153.html" data-v-50c0d782>3-3. nginx配置文件及模块
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1191.html" data-v-50c0d782>3-4. 通过脚本按天切割nginx的日志
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1197.html" data-v-50c0d782>3-5. nginx通过四层代理实现端口转发
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/3103.html" data-v-50c0d782>3-6. NGINX基于cookie针对同一域名进行分流转发
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/3133.html" data-v-50c0d782>3-7. nginx利用内置模块配置限速限流
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/3367.html" data-v-50c0d782>3-8. 利用NGINX内置模块mirror进行流量复制等操作
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/3426.html" data-v-50c0d782>3-9. 使用$remote_user字段记录访问NGINX的用户
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/3537.html" data-v-50c0d782>3-10. 从NGINX自身配置文件中定义访问日志按时间切割
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/5224.html" data-v-50c0d782>3-11. NGINX配置单独代理百度的sitemap文件
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/5226.html" data-v-50c0d782>3-12. nginx配置微信小程序校验及其他
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/5228.html" data-v-50c0d782>3-13. nginx配置gzip压缩
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/5352.html" data-v-50c0d782>3-14. 由Nginx集中代理分散的PHP集群的实践
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1239.html" data-v-50c0d782>3-15. http状态码详解
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/5019.html" data-v-50c0d782>3-16. OpenResty-1-13-6-2-新增ldap模块儿
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/afe439/" data-v-50c0d782>3-17. 排查NGINX的open_file_cache导致发布后访问404的问题
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/296104/" data-v-50c0d782>3-18. 制作OpenResty-1-19-9-1的RPM包
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a></dd></dl><dl data-v-50c0d782><dt id="Php" data-v-50c0d782><a href="#Php" class="header-anchor" data-v-50c0d782>#</a>
+            4. Php
+          </dt> <dd data-v-50c0d782><a href="/pages/2782.html" data-v-50c0d782>4-1. 给php-7-1-5添加扩展fileinfo
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/3124.html" data-v-50c0d782>4-2. CentOS7源码部署PHP-7-0-27
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/3127.html" data-v-50c0d782>4-3. PHP添加各种模块
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/5230.html" data-v-50c0d782>4-4. PHP项目chroot相关内容
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/5232.html" data-v-50c0d782>4-5. PHP新增sodium模块
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/688d60/" data-v-50c0d782>4-6. 添加swoole扩展的一个报错处理
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/f35986/" data-v-50c0d782>4-7. 使用yum-remi部署PHP及其依赖
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2763f6/" data-v-50c0d782>4-8. PHP7-4总是无法读取系统环境变量
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/ee9af4/" data-v-50c0d782>4-9. PHP项目发布时执行reload会有502的问题
+                  <!----></a></dd></dl><dl data-v-50c0d782><dt id="Zabbix" data-v-50c0d782><a href="#Zabbix" class="header-anchor" data-v-50c0d782>#</a>
+            5. Zabbix
+          </dt> <dd data-v-50c0d782><a href="/pages/596.html" data-v-50c0d782>5-1. zabbix3-2的安装
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/667.html" data-v-50c0d782>5-2. zabbix-agent配置
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1019.html" data-v-50c0d782>5-3. 配置一个自动发现规则
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1100.html" data-v-50c0d782>5-4. 关于server报警busy的问题
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1104.html" data-v-50c0d782>5-5. zabbix配置钉钉报警
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a></dd></dl><dl data-v-50c0d782><dt id="Prometheus" data-v-50c0d782><a href="#Prometheus" class="header-anchor" data-v-50c0d782>#</a>
+            6. Prometheus
+          </dt> <dd data-v-50c0d782><a href="/pages/2468.html" data-v-50c0d782>6-1. Prometheus安装部署及简单监控
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2475.html" data-v-50c0d782>6-2. Prometheus邮件报警配置
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2477.html" data-v-50c0d782>6-3. Prometheus配置Grafana Dashboard
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2497.html" data-v-50c0d782>6-4. Prometheus 监控之 Redis
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2499.html" data-v-50c0d782>6-5. Prometheus 监控之 MySQL
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/3814.html" data-v-50c0d782>6-6. 从CPU的获取来学习理解Prometheus查询语句
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/4736.html" data-v-50c0d782>6-7. Prometheus监控之kafka集群
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/4738.html" data-v-50c0d782>6-8. Prometheus监控之elasticsearch集群
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/87c873/" data-v-50c0d782>6-9. Prometheus关于with和by的作用及用法
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a></dd></dl><dl data-v-50c0d782><dt id="Grafana" data-v-50c0d782><a href="#Grafana" class="header-anchor" data-v-50c0d782>#</a>
+            7. Grafana
+          </dt> <dd data-v-50c0d782><a href="/pages/5380.html" data-v-50c0d782>7-1. grafana绘图使用插件或表盘等资料收集整理
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a></dd></dl><dl data-v-50c0d782><dt id="CentOS" data-v-50c0d782><a href="#CentOS" class="header-anchor" data-v-50c0d782>#</a>
+            8. CentOS
+          </dt> <dd data-v-50c0d782><a href="/pages/5279.html" data-v-50c0d782>8-1. Linux好用命令之w命令
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/5281.html" data-v-50c0d782>8-2. Linux好用命令之top命令
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/5283.html" data-v-50c0d782>8-3. Linux好用命令之free命令
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/5286.html" data-v-50c0d782>8-4. Linux好用命令之lsof命令
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/455b2f/" data-v-50c0d782>8-5. Linux好用命令之expect命令
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2c6169/" data-v-50c0d782>8-6. Linux好用命令之gzip保留原文件解压缩
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/3f623d/" data-v-50c0d782>8-7. Linux好用命令之dig命令
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/024c6a/" data-v-50c0d782>8-8. Linux好用命令之rsync命令
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/d18cf8/" data-v-50c0d782>8-9. Linux好用命令之curl劫持请求的三种方式
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/05a282/" data-v-50c0d782>8-10. Linux好用命令之base64命令
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/680b69/" data-v-50c0d782>8-11. Linux好用命令之figlet命令
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2535.html" data-v-50c0d782>8-12. 使用trash-cli给Linux服务器加一个回收站的功能
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/3142.html" data-v-50c0d782>8-13. CentOS-7中tmp目录的清理规则
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/3386.html" data-v-50c0d782>8-14. 用yum的方式快速安装lnmp环境（MySQL5-5&amp;5-7，php5-x&amp;7-x）
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/4147.html" data-v-50c0d782>8-15. CentOS系统里TCP状态中TIME_WAIT超过3万的分析与建议
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages//149.html" data-v-50c0d782>8-16. CentOS-7如何释放主机根分区的磁盘空间
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/4424.html" data-v-50c0d782>8-17. 实践一次抓包看到TCP的三次握手与四次挥手及其他
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/4721.html" data-v-50c0d782>8-18. Logrotate入门了解及生产实践
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a></dd></dl><dl data-v-50c0d782><dt id="Supervisord" data-v-50c0d782><a href="#Supervisord" class="header-anchor" data-v-50c0d782>#</a>
+            9. Supervisord
+          </dt> <dd data-v-50c0d782><a href="/pages/1903.html" data-v-50c0d782>9-1. 使用supervisor管理tomcat，nginx等进程详解
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a></dd></dl><dl data-v-50c0d782><dt id="Systemd" data-v-50c0d782><a href="#Systemd" class="header-anchor" data-v-50c0d782>#</a>
+            10. Systemd
+          </dt> <dd data-v-50c0d782><a href="/pages/2501.html" data-v-50c0d782>10-1. 前言
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2503.html" data-v-50c0d782>10-2. 使用systemctl管理tomcat多实例
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a></dd></dl><dl data-v-50c0d782><dt id="Docker" data-v-50c0d782><a href="#Docker" class="header-anchor" data-v-50c0d782>#</a>
+            11. Docker
+          </dt> <dd data-v-50c0d782><a href="/pages/1847.html" data-v-50c0d782>11-1. docker的几种安装方式
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1932.html" data-v-50c0d782>11-2. docker配置加速器的几种方案
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1939.html" data-v-50c0d782>11-3. docker搭建官方版私有仓库（了解）
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2314.html" data-v-50c0d782>11-4. Docker笔记之企业级仓库harbor搭建
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2021.html" data-v-50c0d782>11-5. 认识了解Dockerfile
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2030.html" data-v-50c0d782>11-6. 利用Dockerfile创建一些基础镜像
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2106.html" data-v-50c0d782>11-7. Docker笔记之与镜像相关的命令整理
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2888.html" data-v-50c0d782>11-8. 从docker容器时间问题探究到Namespace问题
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2949.html" data-v-50c0d782>11-9. Docker笔记之制作kafka镜像
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/3113.html" data-v-50c0d782>11-10. Docker笔记之制作lnmp镜像
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/3388.html" data-v-50c0d782>11-11. Docker笔记之使用apline镜像
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/5234.html" data-v-50c0d782>11-12. Docker笔记之修改默认数据存储目录
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/5236.html" data-v-50c0d782>11-13. Docker笔记之修改默认网段
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/032ab9/" data-v-50c0d782>11-14. docker磁盘或者镜像清理相关内容
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/5c1047/" data-v-50c0d782>11-15. centos镜像添加chrome浏览器以及中文字体
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a></dd></dl><dl data-v-50c0d782><dt id="Docker-Compose" data-v-50c0d782><a href="#Docker-Compose" class="header-anchor" data-v-50c0d782>#</a>
+            12. Docker-Compose
+          </dt> <dd data-v-50c0d782><a href="/pages/docc1e97b/" data-v-50c0d782>12-1. 前言
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a></dd></dl><dl data-v-50c0d782><dt id="Rancher" data-v-50c0d782><a href="#Rancher" class="header-anchor" data-v-50c0d782>#</a>
+            13. Rancher
+          </dt> <dd data-v-50c0d782><a href="/pages/2671.html" data-v-50c0d782>13-1. rancher-2-1-6的ha版本部署记录
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2675.html" data-v-50c0d782>13-2. rancher-2-1-6的ha版本部署记录
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2680.html" data-v-50c0d782>13-3. 关于rancher集群的高可用的实验
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2682.html" data-v-50c0d782>13-4. 关于rancher中部署应用的高可用的实验
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2684.html" data-v-50c0d782>13-5. 关于rancher-ha集群备份恢复试验
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2723.html" data-v-50c0d782>13-6. rancher-v2-2-2的HA部署文档
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2734.html" data-v-50c0d782>13-7. Rancher-2-2-2学习笔记-rancher-cli的使用
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2725.html" data-v-50c0d782>13-8. 基于Rancher-2-2-2的hpa实验
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2746.html" data-v-50c0d782>13-9. Rancher-2-2-2之Jenkins+rancher+harbor+Gitlab部署应用到生产
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a></dd></dl><dl data-v-50c0d782><dt id="Ansible" data-v-50c0d782><a href="#Ansible" class="header-anchor" data-v-50c0d782>#</a>
+            14. Ansible
+          </dt> <dd data-v-50c0d782><div class="sub-cat-wrap" data-v-50c0d782><div id="实战笔记" class="sub-title" data-v-50c0d782><a href="#实战笔记" class="header-anchor" data-v-50c0d782>#</a>
+                  14-1. 实战笔记
+                </div> <a href="/pages/5173.html" data-v-50c0d782>
+                  14-1-1. ansible-playbook编排使用tips
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a></div></dd></dl><dl data-v-50c0d782><dt id="OpenLdap" data-v-50c0d782><a href="#OpenLdap" class="header-anchor" data-v-50c0d782>#</a>
+            15. OpenLdap
+          </dt> <dd data-v-50c0d782><a href="/pages/3410.html" data-v-50c0d782>15-1. ldap服务端快速部署
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/3414.html" data-v-50c0d782>15-2. web部署和用户管理思路以及密码自助修改
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/3416.html" data-v-50c0d782>15-3. 集成Zabbix,Jenkins,GitLab,JumpServer,Harbor,Nginx实战
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/3568.html" data-v-50c0d782>15-4. 通过命令行管理用户分组备份等工作
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/911a36/" data-v-50c0d782>15-5. ldap常见错误码
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a></dd></dl><dl data-v-50c0d782><dt id="GitLab" data-v-50c0d782><a href="#GitLab" class="header-anchor" data-v-50c0d782>#</a>
+            16. GitLab
+          </dt> <dd data-v-50c0d782><a href="/pages/243.html" data-v-50c0d782>16-1. Gitlab简单部署
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/248.html" data-v-50c0d782>16-2. Gitlab备份以及恢复
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/406.html" data-v-50c0d782>16-3. 配置Gitlab提交代码的钉钉通知
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2043.html" data-v-50c0d782>16-4. 汉化Gitlab-10-1-0
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/4046.html" data-v-50c0d782>16-5. 如何迁移一个仓库到新的Gitlab
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/5315.html" data-v-50c0d782>16-6. Gitlab忘记root密码怎么办
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/5317.html" data-v-50c0d782>16-7. 通过命令行git log获取各种提交信息
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/5322.html" data-v-50c0d782>16-8. 使用curl批量在分组内创建项目
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/3002.html" data-v-50c0d782>16-9. git更改前一次commit内容并提交到master
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/6ec567/" data-v-50c0d782>16-10. git配置github与gitlab推送时指定不同用户与邮箱
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a></dd></dl><dl data-v-50c0d782><dt id="Etcd" data-v-50c0d782><a href="#Etcd" class="header-anchor" data-v-50c0d782>#</a>
+            17. Etcd
+          </dt> <dd data-v-50c0d782><a href="/pages/4050.html" data-v-50c0d782>17-1. 单机部署一个ETCD集群
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/4052.html" data-v-50c0d782>17-2. ETCD在使用中遇到过的报错及处理
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/5393.html" data-v-50c0d782>17-3. ETCD配额问题处理与验证 Error etcdserver mvcc database space exceeded
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a></dd></dl><dl data-v-50c0d782><dt id="Consul" data-v-50c0d782><a href="#Consul" class="header-anchor" data-v-50c0d782>#</a>
+            18. Consul
+          </dt> <dd data-v-50c0d782><a href="/pages/f61d95/" data-v-50c0d782>18-1. consul集群部署
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/d1ef5c/" data-v-50c0d782>18-2. Nginx+consul实现集群主机优雅扩缩容
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a></dd></dl><dl data-v-50c0d782><dt id="RabbitMQ" data-v-50c0d782><a href="#RabbitMQ" class="header-anchor" data-v-50c0d782>#</a>
+            19. RabbitMQ
+          </dt> <dd data-v-50c0d782><a href="/pages/2930.html" data-v-50c0d782>19-1. Rabbitmq使用源码安装部署单机版
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2932.html" data-v-50c0d782>19-2. Rabbitmq使用二进制方式安装
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2934.html" data-v-50c0d782>19-3. Rabbitmq使用以及管理
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2937.html" data-v-50c0d782>19-4. Rabbitmq二进制集群搭建
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a></dd></dl><dl data-v-50c0d782><dt id="Kafka" data-v-50c0d782><a href="#Kafka" class="header-anchor" data-v-50c0d782>#</a>
+            20. Kafka
+          </dt> <dd data-v-50c0d782><a href="/pages/2951.html" data-v-50c0d782>20-1. kafka-2-11单机部署
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2953.html" data-v-50c0d782>20-2. kafka-2-11集群部署
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2993.html" data-v-50c0d782>20-3. kafka-2-11集群监控
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/9fc4fa/" data-v-50c0d782>20-4. kafka历史数据清理策略以及配置
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/03e656/" data-v-50c0d782>20-5. 如何删除kafka消费组
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a></dd></dl><dl data-v-50c0d782><dt id="Mysql" data-v-50c0d782><a href="#Mysql" class="header-anchor" data-v-50c0d782>#</a>
+            21. Mysql
+          </dt> <dd data-v-50c0d782><a href="/pages/1497.html" data-v-50c0d782>21-1. MySQL数据库增量备份的操作
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/5295.html" data-v-50c0d782>21-2. MySQL中order by的学习使用
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a></dd></dl><dl data-v-50c0d782><dt id="MongoDB" data-v-50c0d782><a href="#MongoDB" class="header-anchor" data-v-50c0d782>#</a>
+            22. MongoDB
+          </dt> <dd data-v-50c0d782><a href="/pages/2972.html" data-v-50c0d782>22-1. 认识了解MongoDB
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2974.html" data-v-50c0d782>22-2. CentOS-7部署MongoDB
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2976.html" data-v-50c0d782>22-3. MongoDB增删改查基本操作
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2978.html" data-v-50c0d782>22-4. MongoDB日常运维之用户管理
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1c445e/" data-v-50c0d782>22-5. MongoDB索引方面的学习实践
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/4bbad9/" data-v-50c0d782>22-6. MongoDB关联查询的学习以及实践
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a></dd></dl><dl data-v-50c0d782><dt id="OpenVPN" data-v-50c0d782><a href="#OpenVPN" class="header-anchor" data-v-50c0d782>#</a>
+            23. OpenVPN
+          </dt> <dd data-v-50c0d782><a href="/pages/3807.html" data-v-50c0d782>23-1. openVPN-2-4-8—基于传统方式进行用户认证
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/3809.html" data-v-50c0d782>23-2. openVPN-2-4-8—基于MySQL进行用户认证
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/5363.html" data-v-50c0d782>23-3. 使用docker快速部署一个 IPsec VPN 服务器
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a></dd></dl><dl data-v-50c0d782><dt id="Kvm" data-v-50c0d782><a href="#Kvm" class="header-anchor" data-v-50c0d782>#</a>
+            24. Kvm
+          </dt> <dd data-v-50c0d782><a href="/pages/114.html" data-v-50c0d782>24-1. kvm基础部署
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/120.html" data-v-50c0d782>24-2. kvm常规操作-改名-快照-修改内存
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/180.html" data-v-50c0d782>24-3. 解决kvm虚拟机启动时报错找不到镜像的问题
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/3007.html" data-v-50c0d782>24-4. kvm虚拟机开机之后报错Failed to mount
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a></dd></dl><dl data-v-50c0d782><dt id="VMware" data-v-50c0d782><a href="#VMware" class="header-anchor" data-v-50c0d782>#</a>
+            25. VMware
+          </dt> <dd data-v-50c0d782><a href="/pages/1248.html" data-v-50c0d782>25-1. VMware-6-5虚拟化实战之ESXI的安装
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1265.html" data-v-50c0d782>25-2. VMware-6-5虚拟化实战之VCSA的安装
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1291.html" data-v-50c0d782>25-3. VMware-6-5虚拟化实战之VCSA的简单配置
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1606.html" data-v-50c0d782>25-4. VMware-6-5虚拟化实战之磁盘方面的管理
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a></dd></dl><dl data-v-50c0d782><dt id="配置文件详解" data-v-50c0d782><a href="#配置文件详解" class="header-anchor" data-v-50c0d782>#</a>
+            26. 配置文件详解
+          </dt> <dd data-v-50c0d782><a href="/pages/921.html" data-v-50c0d782>26-1. 配置文件详解—nginx-conf
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1028.html" data-v-50c0d782>26-2. 配置文件详解之–tomcat-servier-xml
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1076.html" data-v-50c0d782>26-3. 配置文件详解之–SSH-sshd_config
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1234.html" data-v-50c0d782>26-4. 配置文件详解之–yum-conf
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1392.html" data-v-50c0d782>26-5. 配置文件详解之–redis-conf
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a></dd></dl><dl data-v-50c0d782><dt id="Other" data-v-50c0d782><a href="#Other" class="header-anchor" data-v-50c0d782>#</a>
+            27. Other
+          </dt> <dd data-v-50c0d782><a href="/pages/285.html" data-v-50c0d782>27-1. 整理蓝鲸社区版3-X部署文档
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/310.html" data-v-50c0d782>27-2. 关于开源堡垒机jumpserver_1-2的一些体验记录
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1060.html" data-v-50c0d782>27-3. 防火墙基础知识之SNAT详解
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1166.html" data-v-50c0d782>27-4. 关于easyops的社区版与正式版两者体验之思考
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1308.html" data-v-50c0d782>27-5. DELL R430服务器做raid以及安装操作系统过程
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1366.html" data-v-50c0d782>27-6. CentOS系统安装之后的优化
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1475.html" data-v-50c0d782>27-7. 如何快速的批量配置某台主机对多台主机免密码登陆
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/f927f0/" data-v-50c0d782>27-8. Python-2-7的安装
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1552.html" data-v-50c0d782>27-9. pinpoint安装流程
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1491.html" data-v-50c0d782>27-10. CentOS7上Python-3-6的安装
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1644.html" data-v-50c0d782>27-11. 记录我与maven的故事三则
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1663.html" data-v-50c0d782>27-12. tomcat默认日志优化处理
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/1700.html" data-v-50c0d782>27-13. Maven 基础知识大全汇总整理
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2459.html" data-v-50c0d782>27-14. 会话管理工具tmux整理
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/3147.html" data-v-50c0d782>27-15. 使用pure-ftpd搭建ftp服务
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/4048.html" data-v-50c0d782>27-16. 简单快速部署轻量Git服务器gogs
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/5146.html" data-v-50c0d782>27-17. 使用athens部署企业内部Gitlab包的私服代理
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/5377.html" data-v-50c0d782>27-18. 快速部署cerebro-v0-9-4监控es集群状态
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a><a href="/pages/2b9a35/" data-v-50c0d782>27-19. 使用transfer部署一个内网上传程序
+                  <span class="title-tag" data-v-50c0d782>
+                    原创
+                  </span></a></dd></dl></div></div></div> <div class="content-wrapper"><!----> <!---->  <div class="theme-vdoing-content content__default"><hr> <div class="custom-block tip"><p class="custom-block-title">提示</p> <ul><li>这里内容异常丰富，还将更加丰富，记得妥善收藏本页面，方便日后慢慢品读！</li></ul></div> <div class="center-container"><h2 id="写作感怀"><a href="#写作感怀" class="header-anchor">#</a> 写作感怀</h2></div><p>有的人渴望发布一些东西，有些人一定要发布一些东西。</p> <p>有位作者在他的《心灵独白》中第一句话便说：“世界上最不能容忍的垃圾——文字垃圾。所以我每次提起笔时，不禁心凉胆战。”事实上我在动手写博客里这些文章的时候，无不抱有这种心情。</p> <p>很开心，自己也一直能够秉持这么一股信念，就算不发文章，也绝不直接在网上复制粘贴或者转载一些并不好用的文章到自己的博客里来。可能我们每个人都有过被网上那些复制粘贴的文章误导或者伤害的经历，每念及此，我就宁肯不发文章，也不愿意像那样弄一些无关痛痒的文章来。</p> <p>很多时候，我们在工作生活中，浏览着大量的内容，也许就在这些浏览当中蹉跎了时光，消磨了学习的精神头。</p> <p>我们学不会一个东西，不是因为资料少或者没有资料，而是因为资料太多，或者怀抱着资料而迟迟没有出发。</p> <p>放慢你的心情吧，投入你的精力吧，像写文章的人那样用心的去体会文章，或许你会收获比写文章人更多的东西也说不定，我个人就经常时不时回头来看看这里写的文章，当然，除了自恋（边看边叹：咦，写的真不赖呀！）之外，更多时候也是回头对自己的一种审视与二次学习。</p> <p>还是那句话，学习，记录，分享。啊，我多快乐！！！</p></div></div>  <div class="page-edit"><!----> <!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2021/09/05, 18:05:08</span></div></div> <div class="page-nav-wapper"><!----> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/topic/">系列专题</a>→
+      </span></p></div></div></div> <div class="article-list no-article-list"><div class="article-title"><a href="/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/pages/02cfc7/"><div>
+            学习周刊-2022年第10周
+            <span class="title-tag">
+              原创
+            </span></div></a> <span class="date">03-19</span></dt></dl><dl><dd>02</dd> <dt><a href="/pages/383679/"><div>
+            MongoDB自增ID在golang中的实践
+            <span class="title-tag">
+              原创
+            </span></div></a> <span class="date">03-18</span></dt></dl><dl><dd>03</dd> <dt><a href="/pages/4bbad9/"><div>
+            MongoDB关联查询的学习以及实践
+            <span class="title-tag">
+              原创
+            </span></div></a> <span class="date">03-16</span></dt></dl> <dl><dd></dd> <dt><a href="/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><div class="icons"><a href="https://github.com/eryajf" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="mailto:Linuxlql@163.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://wiki.eryajf.net/rss.xml" title="订阅" target="_blank" class="iconfont icon-rss"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2017-2022
+    <span>| <a href="https://www.foreverblog.cn/" class="d-inline-block text-muted" target="_blank" rel="external nofollow"><img src="https://t.eryajf.net/imgs/2022/01/964560013b68c2e4.png" alt="点击查看十年之约" style="width:auto;height:11px;"> | <a rel="nofollow " target="_blank" href="https://beian.miit.gov.cn/">浙ICP备18057030号</a></span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"><canvas id="vuepress-canvas-cursor"></canvas><!----><!----><div></div></div></div>
+    <script src="/assets/js/app.b64d52e0.js" defer></script><script src="/assets/js/2.09106d93.js" defer></script><script src="/assets/js/6.0fa149be.js" defer></script>
+  </body>
+</html>
